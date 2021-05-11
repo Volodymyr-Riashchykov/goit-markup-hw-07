@@ -1,0 +1,37 @@
+.position {
+  position: relative;
+}
+.lessons__tumb {
+  @extend %flex;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 370px;
+  height: 70px;
+  background-color: $tumb-color;
+}
+.lessons__heiding {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+
+  color: $primary-color;
+}
+.portfolio,
+.features,
+.client,
+.team {
+  @include pad(94px, 94px);
+}
+.lessons {
+  padding-bottom: 94px;
+}
+.text {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: $title-text-color;
+}

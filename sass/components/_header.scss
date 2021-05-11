@@ -1,0 +1,56 @@
+.header {
+  border-bottom: 1px solid $bottom-line;
+}
+.header__item {
+  position: relative;
+}
+.header__studio {
+  // @include pad(24px, 25px);
+  text-decoration: none;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  color: $secondary-color;
+}
+.header__list {
+  display: flex;
+  padding: 0;
+  list-style-type: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.header__item:not(:first-child) {
+  margin-left: 50px;
+}
+.header__nav {
+  margin: 0 0 0 93px;
+}
+.header__menu {
+  margin: 0 0 0 auto;
+}
+.header__link {
+  display: block;
+  @include pad();
+  text-decoration: none;
+  color: $secondary-color;
+}
+.primary,
+.header__web {
+  color: $accent-text-color;
+}
+.header__addr {
+  /* display: block; */
+  display: flex;
+  align-items: center;
+  @include pad();
+  color: $text-color;
+  text-decoration: none;
+  fill: $text-color;
+}
+.header__icon {
+  margin-right: 10px;
+}

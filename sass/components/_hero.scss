@@ -1,0 +1,33 @@
+.hero {
+  @extend %cont;
+  @include pad(200px, 200px);
+  height: 600px;
+  text-align: center;
+  background-color: $foll-color;
+  background-image: linear-gradient(to right, $gradient, $gradient), url(../images/fon.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.hero__heading {
+  margin: 0;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $primary-color;
+}
+.hero__button {
+  margin-top: 30px;
+  padding: 10px 32px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  color: $primary-color;
+  background: $accent-text-color;
+}
